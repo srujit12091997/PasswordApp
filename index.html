@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureVault - Password Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>🔐 SecureVault</h1>
+        <p>Generate, Store, and Manage Your Passwords Securely</p>
+    </header>
+
+    <div class="main-container">
+        <!-- Password Generator Section -->
+        <div class="generator-container">
+            <h2 class="section-title">Password Generator</h2>
+            
+            <div class="password-display">
+                <span id="password">Click Generate!</span>
+                <button class="copy-button" id="copyBtn">
+                    📋 Copy
+                </button>
+            </div>
+
+            <div class="options">
+                <div class="option">
+                    <label>Password Length: <span id="lengthValue">12</span></label>
+                    <input type="range" id="length" min="8" max="32" value="12">
+                </div>
+
+                <div class="option">
+                    <label>Include Uppercase</label>
+                    <input type="checkbox" id="uppercase" checked>
+                </div>
+
+                <div class="option">
+                    <label>Include Lowercase</label>
+                    <input type="checkbox" id="lowercase" checked>
+                </div>
+
+                <div class="option">
+                    <label>Include Numbers</label>
+                    <input type="checkbox" id="numbers" checked>
+                </div>
+
+                <div class="option">
+                    <label>Include Symbols</label>
+                    <input type="checkbox" id="symbols" checked>
+                </div>
+            </div>
+
+            <button class="button primary-button generate-btn">
+                Generate Password
+            </button>
+
+            <div class="save-form">
+                <h3>Save Password</h3>
+                <div class="form-group">
+                    <label>Title/Website</label>
+                    <input type="text" id="passwordTitle" placeholder="e.g., Gmail, Facebook">
+                </div>
+                <div class="form-group">
+                    <label>Notes</label>
+                    <textarea id="passwordNote" rows="3" placeholder="Add notes about this password..."></textarea>
+                </div>
+                <button class="button success-button" id="saveBtn">Save to Vault</button>
+            </div>
+        </div>
+
+        <!-- Password Vault Section -->
+        <div class="vault-container">
+            <h2 class="section-title">Password Vault</h2>
+            <div class="stored-passwords" id="passwordVault">
+                <!-- Stored passwords will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="alert" id="alert"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
