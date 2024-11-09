@@ -115,9 +115,9 @@ I welcome contributions! Feel free to:
 
 ## 📞 Contact & Support
 - Created by: Srujit Varasala
-- Email: your.email@example.com
-- LinkedIn: [Srujit Varasala](your-linkedin-url)
-- GitHub: [@srujit-varasala](your-github-url)
+- Email: srujit.v@gmail.com
+- LinkedIn: [Srujit Varasala](https://www.linkedin.com/in/srujitvarasala/)
+- GitHub: [@srujit-varasala](https://github.com/srujit12091997)
 
 ## 🌟 Version History
 
